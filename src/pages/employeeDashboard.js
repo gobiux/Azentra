@@ -43,7 +43,7 @@ export function renderEmployeeDashboard() {
         <div class="stat-header">
           <span class="stat-label">ACTIVE LICENSES</span>
           <div class="stat-icon-wrapper bg-purple-light">
-            <img src="/Icons/material-symbols_verified-outline.png" class="stat-icon icon-purple" alt="Active" />
+            <img src="./Icons/material-symbols_verified-outline.png" class="stat-icon icon-purple" alt="Active" />
           </div>
         </div>
         <div class="stat-value">12</div>
@@ -52,7 +52,7 @@ export function renderEmployeeDashboard() {
         <div class="stat-header">
           <span class="stat-label">PENDING REQUESTS</span>
           <div class="stat-icon-wrapper bg-orange-light">
-            <img src="/Icons/material-symbols_hourglass-outline.png" class="stat-icon icon-orange" alt="Pending" />
+            <img src="./Icons/material-symbols_hourglass-outline.png" class="stat-icon icon-orange" alt="Pending" />
           </div>
         </div>
         <div class="stat-value">2</div>
@@ -61,7 +61,7 @@ export function renderEmployeeDashboard() {
         <div class="stat-header">
           <span class="stat-label">EXPIRING SOON</span>
           <div class="stat-icon-wrapper bg-red-light">
-            <img src="/Icons/material-symbols_warning-outline-rounded.png" class="stat-icon icon-red" alt="Expiring" />
+            <img src="./Icons/material-symbols_warning-outline-rounded.png" class="stat-icon icon-red" alt="Expiring" />
           </div>
         </div>
         <div class="stat-value value-red">1</div>
@@ -90,7 +90,7 @@ export function renderEmployeeDashboard() {
               <td>
                 <div class="tool-info">
                   <div class="tool-icon" style="background: #F5F5F5;">
-                    <img src="/Icons/ph_note.png" class="icon-grey" style="width: 20px; height: 20px;" alt="Notion" />
+                    <img src="./Icons/ph_note.png" class="icon-grey" style="width: 20px; height: 20px;" alt="Notion" />
                   </div>
                   <span class="tool-name">Notion</span>
                 </div>
@@ -105,7 +105,7 @@ export function renderEmployeeDashboard() {
               <td>
                 <div class="tool-info">
                   <div class="tool-icon" style="background: #E8E5FF;">
-                    <img src="/Icons/bx_chat.png" class="icon-purple" style="width: 20px; height: 20px;" alt="Slack" />
+                    <img src="./Icons/bx_chat.png" class="icon-purple" style="width: 20px; height: 20px;" alt="Slack" />
                   </div>
                   <span class="tool-name">Slack</span>
                 </div>
@@ -120,9 +120,9 @@ export function renderEmployeeDashboard() {
               <td>
                 <div class="tool-info">
                   <div class="tool-icon" style="background: #E8E5FF;">
-                    <img src="/Icons/material-symbols_brush-outline.png" class="icon-purple" style="width: 20px; height: 20px;" alt="aigma" />
+                    <img src="./Icons/material-symbols_brush-outline.png" class="icon-purple" style="width: 20px; height: 20px;" alt="Figma" />
                   </div>
-                  <span class="tool-name">aigma</span>
+                  <span class="tool-name">Figma</span>
                 </div>
               </td>
               <td>Design</td>

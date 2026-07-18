@@ -34,18 +34,18 @@ export const icons = {
 
 // Tool icon mapping
 export const toolIcons = {
-  'Adobe Creative Cloud': { src: '/Icons/majesticons_edit-pen-4-line.png', bg: '#FFF3E0', filter: 'icon-orange' },
-  'Slack Enterprise': { src: '/Icons/bx_chat.png', bg: '#E8E5FF', filter: 'icon-purple' },
-  'Asana Business': { src: '/Icons/mdi_tick-circle-outline.png', bg: '#E8F8F5', filter: 'icon-green' },
-  'AWS Business Support': { src: '/Icons/material-symbols_cloud-outline.png', bg: '#E3F2FD', filter: 'icon-blue' },
-  'Figma Enterprise': { src: '/Icons/material-symbols_brush-outline.png', bg: '#E8E5FF', filter: 'icon-purple' },
-  'GitHub Enterprise': { src: '/Icons/material-symbols_code.png', bg: '#F5F5F5', filter: 'icon-grey' },
-  'Tableau Professional': { src: '/Icons/mdi_analytics.png', bg: '#E3F2FD', filter: 'icon-blue' },
-  'Notion Team': { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' },
-  'Grammarly Pro': { src: '/Icons/material-symbols_brush-outline.png', bg: '#E8F8F5', filter: 'icon-green' },
-  'Zoom Video': { src: '/Icons/tabler_video.png', bg: '#E8E5FF', filter: 'icon-purple' },
-  'Jira Cloud': { src: '/Icons/mdi_analytics.png', bg: '#E3F2FD', filter: 'icon-blue' },
-  'Canva Pro': { src: '/Icons/material-symbols_brush-outline.png', bg: '#E8E5FF', filter: 'icon-purple' },
+  'Adobe Creative Cloud': { src: './Icons/majesticons_edit-pen-4-line.png', bg: '#FFF3E0', filter: 'icon-orange' },
+  'Slack Enterprise': { src: './Icons/bx_chat.png', bg: '#E8E5FF', filter: 'icon-purple' },
+  'Asana Business': { src: './Icons/mdi_tick-circle-outline.png', bg: '#E8F8F5', filter: 'icon-green' },
+  'AWS Business Support': { src: './Icons/material-symbols_cloud-outline.png', bg: '#E3F2FD', filter: 'icon-blue' },
+  'Figma Enterprise': { src: './Icons/material-symbols_brush-outline.png', bg: '#E8E5FF', filter: 'icon-purple' },
+  'GitHub Enterprise': { src: './Icons/material-symbols_code.png', bg: '#F5F5F5', filter: 'icon-grey' },
+  'Tableau Professional': { src: './Icons/mdi_analytics.png', bg: '#E3F2FD', filter: 'icon-blue' },
+  'Notion Team': { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' },
+  'Grammarly Pro': { src: './Icons/material-symbols_brush-outline.png', bg: '#E8F8F5', filter: 'icon-green' },
+  'Zoom Video': { src: './Icons/tabler_video.png', bg: '#E8E5FF', filter: 'icon-purple' },
+  'Jira Cloud': { src: './Icons/mdi_analytics.png', bg: '#E3F2FD', filter: 'icon-blue' },
+  'Canva Pro': { src: './Icons/material-symbols_brush-outline.png', bg: '#E8E5FF', filter: 'icon-purple' },
 };
 
 // Employee user
@@ -195,7 +195,7 @@ export const requestQueue = [
 export const auditEntries = [
   {
     bg: '#F1F3F5',
-    iconSrc: '/Icons/mingcute_user-add-line.png',
+    iconSrc: './Icons/mingcute_user-add-line.png',
     iconFilter: 'icon-grey',
     text: '<strong>New seat assigned to Marcus Wright</strong>',
     meta: 'License: Adobe Creative Cloud',
@@ -203,7 +203,7 @@ export const auditEntries = [
   },
   {
     bg: '#E8F8F5',
-    iconSrc: '/Icons/tabler_cash.png',
+    iconSrc: './Icons/tabler_cash.png',
     iconFilter: 'icon-green',
     text: '<strong>Billing updated for Zoom Video Communications</strong>',
     meta: 'Action: Invoice #99827 Processed',
@@ -211,7 +211,7 @@ export const auditEntries = [
   },
   {
     bg: '#FDEDEC',
-    iconSrc: '/Icons/material-symbols_block-outline.png',
+    iconSrc: './Icons/material-symbols_block-outline.png',
     iconFilter: 'icon-red',
     text: '<strong>License request denied for \'Grammarly Pro\'</strong>',
     meta: 'Requester: Sarah Jenkins • Reason: Duplicate Tool',

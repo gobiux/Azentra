@@ -40,7 +40,7 @@ export function renderAdminDashboard() {
     <!-- Expiry Banner -->
     <div class="urgency-banner animate-slide-down mt-8 mb-24">
       <div class="banner-text">
-        <img src="/Icons/material-symbols_warning-outline-rounded.png" style="width: 24px; filter: invert(100%);" alt="Warning" />
+        <img src="./Icons/material-symbols_warning-outline-rounded.png" style="width: 24px; filter: invert(100%);" alt="Warning" />
         <div>
           <strong>2 licenses expiring in 14 days — Renew now.</strong>
           <div style="font-size:0.8125rem;opacity:0.85;margin-top:2px;">Adobe Creative Cloud & Slack Enterprise are approaching their billing cycle.</div>
@@ -56,8 +56,8 @@ export function renderAdminDashboard() {
         <p class="page-subtitle" style="margin-top:2px;">Real-time utilization and compliance tracking</p>
       </div>
       <div class="table-actions">
-        <button title="Filter"><img src="/Icons/mynaui_filter-solid.png" class="icon-grey" style="width: 16px;" alt="Filter" /></button>
-        <button title="Download"><img src="/Icons/material-symbols_download-rounded.png" class="icon-grey" style="width: 16px;" alt="Download" /></button>
+        <button title="Filter"><img src="./Icons/mynaui_filter-solid.png" class="icon-grey" style="width: 16px;" alt="Filter" /></button>
+        <button title="Download"><img src="./Icons/material-symbols_download-rounded.png" class="icon-grey" style="width: 16px;" alt="Download" /></button>
       </div>
     </div>
 
@@ -75,7 +75,7 @@ export function renderAdminDashboard() {
         </thead>
         <tbody>
           ${adminLicenses.map(lic => {
-            const ti = toolIcons[lic.tool] || { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
+            const ti = toolIcons[lic.tool] || { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
             const statusClass = lic.status === 'Active' ? 'success' : lic.status === 'Warning' ? 'warning' : 'danger';
             const pctColor = lic.pct > 90 ? 'success' : lic.pct > 70 ? 'warning' : 'success';
             return `
@@ -148,7 +148,7 @@ export function renderAdminDashboard() {
 
       <!-- Optimization Card -->
       <div class="optimization-card animate-slide-up" style="animation-delay:300ms;">
-        <div class="opt-icon"><img src="/Icons/boxicons_light-bulb.png" style="width: 24px; filter: invert(100%);" alt="Idea" /></div>
+        <div class="opt-icon"><img src="./Icons/boxicons_light-bulb.png" style="width: 24px; filter: invert(100%);" alt="Idea" /></div>
         <h3>Optimization Opportunity</h3>
         <p>We've detected 12 inactive seats in Figma. Reclaiming these could save your department $180/mo.</p>
         <button class="btn" id="btn-view-analytics">View Analytics</button>

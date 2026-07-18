@@ -93,7 +93,7 @@ export function renderAllLicenses() {
         </thead>
         <tbody>
           ${allLicenses.map(lic => {
-            const ti = toolIcons[lic.tool] || { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
+            const ti = toolIcons[lic.tool] || { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
             const statusClass = lic.status === 'Active' ? 'success' : 'warning';
             const pctColor = lic.pct > 90 ? 'danger' : lic.pct > 70 ? 'warning' : 'success';
             return `

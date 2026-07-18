@@ -3,6 +3,7 @@
    ============================================================ */
 import { icons, notifications } from '../data/mockData.js';
 import { navigate } from '../router.js';
+import avatarImg from '../assets/avatar.png';
 
 let activeDropdown = null;
 
@@ -40,7 +41,7 @@ export function renderTopbar(user, containerId = 'app-topbar') {
 
   container.innerHTML = `
     <div class="topbar-search">
-      <img src="/Icons/material-symbols_search-rounded.png" class="search-icon icon-grey" alt="Search" style="width:16px; opacity: 0.6;"/>
+      <img src="./Icons/material-symbols_search-rounded.png" class="search-icon icon-grey" alt="Search" style="width:16px; opacity: 0.6;"/>
       <input type="text" class="input-field search-input" placeholder="Search licenses or vendors..." id="topbar-search-input" />
     </div>
 
@@ -48,7 +49,7 @@ export function renderTopbar(user, containerId = 'app-topbar') {
       <!-- Notifications -->
       <div class="topbar-dropdown-wrapper">
         <button class="topbar-icon-btn" id="topbar-notifications-btn" title="Notifications">
-          <img src="/Icons/line-md_bell.png" class="topbar-icon" alt="Notifications" />
+          <img src="./Icons/line-md_bell.png" class="topbar-icon" alt="Notifications" />
           <span class="notification-dot"></span>
         </button>
         <div class="topbar-dropdown" id="dropdown-notifications">
@@ -79,7 +80,7 @@ export function renderTopbar(user, containerId = 'app-topbar') {
       <!-- Settings -->
       <div class="topbar-dropdown-wrapper">
         <button class="topbar-icon-btn" id="topbar-settings-btn" title="Settings">
-          <img src="/Icons/uil_setting.png" class="topbar-icon" alt="Settings" />
+          <img src="./Icons/uil_setting.png" class="topbar-icon" alt="Settings" />
         </button>
         <div class="topbar-dropdown" id="dropdown-settings">
           <div class="dropdown-header">
@@ -95,20 +96,20 @@ export function renderTopbar(user, containerId = 'app-topbar') {
               <span>Security</span>
             </div>
             <div class="dropdown-menu-item" id="settings-notifications">
-              <img src="/Icons/line-md_bell.png" class="dropdown-icon" alt="bell" style="width:16px;height:16px;" />
+              <img src="./Icons/line-md_bell.png" class="dropdown-icon" alt="bell" style="width:16px;height:16px;" />
               <span>Notification Preferences</span>
             </div>
             <div class="dropdown-menu-item" id="settings-billing">
-              <img src="/Icons/mdi_wallet-outline.png" class="dropdown-icon" alt="billing" style="width:16px;height:16px;" />
+              <img src="./Icons/mdi_wallet-outline.png" class="dropdown-icon" alt="billing" style="width:16px;height:16px;" />
               <span>Billing & Plans</span>
             </div>
             <div class="dropdown-divider"></div>
             <div class="dropdown-menu-item" id="settings-integrations">
-              <img src="/Icons/material-symbols_brush-outline.png" class="dropdown-icon" alt="brush" style="width:16px;height:16px;" />
+              <img src="./Icons/material-symbols_brush-outline.png" class="dropdown-icon" alt="brush" style="width:16px;height:16px;" />
               <span>Integrations</span>
             </div>
             <div class="dropdown-menu-item" id="settings-api">
-              <img src="/Icons/material-symbols_key-outline.png" class="dropdown-icon" alt="key" style="width:16px;height:16px;" />
+              <img src="./Icons/material-symbols_key-outline.png" class="dropdown-icon" alt="key" style="width:16px;height:16px;" />
               <span>API Keys</span>
             </div>
           </div>
@@ -123,13 +124,13 @@ export function renderTopbar(user, containerId = 'app-topbar') {
             <div class="user-role">${user.role}</div>
           </div>
           <div class="avatar">
-            <img src="/src/assets/avatar.png" alt="${user.name}" class="avatar-img" />
+            <img src="${avatarImg}" alt="${user.name}" class="avatar-img" />
           </div>
         </div>
         <div class="topbar-dropdown topbar-dropdown-right" id="dropdown-user">
           <div class="dropdown-user-header">
             <div class="avatar avatar-lg">
-              <img src="/src/assets/avatar.png" alt="${user.name}" class="avatar-img" />
+              <img src="${avatarImg}" alt="${user.name}" class="avatar-img" />
             </div>
             <div>
               <div class="dropdown-user-name">${user.name}</div>

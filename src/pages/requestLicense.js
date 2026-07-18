@@ -127,7 +127,7 @@ export function renderRequestLicense() {
 
 function renderCatalogItems(items) {
   return items.map(item => {
-    const ti = toolIcons[item.name] || { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
+    const ti = toolIcons[item.name] || { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
     return `
       <div class="catalog-item" data-tool="${item.name}">
         <div class="tool-icon" style="background: ${ti.bg}; width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:10px;margin-bottom:12px;">

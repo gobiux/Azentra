@@ -38,7 +38,7 @@ export function renderRequestsQueue() {
     <!-- Queue Items -->
     <div class="stagger-children" id="queue-list">
       ${requestQueue.map((req, i) => {
-        const ti = toolIcons[req.tool] || { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
+        const ti = toolIcons[req.tool] || { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
         const urgencyClass = req.urgency === 'HIGH' ? 'high' : req.urgency === 'MEDIUM' ? 'medium' : 'low';
         return `
           <div class="request-queue-item ${urgencyClass}-urgency" data-request-id="${req.id}" style="animation-delay:${i * 80}ms;">

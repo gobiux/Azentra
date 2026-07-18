@@ -10,12 +10,12 @@ export function renderSidebar(navItems, user, containerId = 'app-sidebar') {
   const currentRoute = getCurrentRoute();
 
   const pngIcons = {
-    dashboard: '/Icons/mingcute_grid-2-line.png',
-    licenses: '/Icons/boxicons_receipt.png',
-    requests: '/Icons/mdi_clipboard-clock-outline.png',
-    renewals: '/Icons/ic_round-sync.png',
-    audit: '/Icons/material-symbols_history.png',
-    helpCircle: '/Icons/material-symbols_help-outline.png'
+    dashboard: './Icons/mingcute_grid-2-line.png',
+    licenses: './Icons/boxicons_receipt.png',
+    requests: './Icons/mdi_clipboard-clock-outline.png',
+    renewals: './Icons/ic_round-sync.png',
+    audit: './Icons/material-symbols_history.png',
+    helpCircle: './Icons/material-symbols_help-outline.png'
   };
 
   container.innerHTML = `

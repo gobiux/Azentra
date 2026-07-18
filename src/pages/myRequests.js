@@ -77,7 +77,7 @@ export function renderMyRequests() {
         </thead>
         <tbody>
           ${myRequests.map(req => {
-            const ti = toolIcons[req.tool] || { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
+            const ti = toolIcons[req.tool] || { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
             return `
               <tr data-status="${req.status}" class="request-row" data-id="${req.id}">
                 <td><code style="font-size:0.8125rem;font-weight:600;color:var(--primary);">${req.id}</code></td>

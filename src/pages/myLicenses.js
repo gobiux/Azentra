@@ -58,7 +58,7 @@ export function renderMyLicenses() {
     <div class="section-title mb-16">License Details</div>
     <div class="stagger-children" style="display:flex;flex-direction:column;gap:16px;">
       ${employeeLicenses.map((lic, i) => {
-        const ti = toolIcons[lic.tool] || { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
+        const ti = toolIcons[lic.tool] || { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
         const statusClass = lic.status === 'Active' ? 'success' : 'warning';
         return `
           <div class="card" style="animation-delay:${i * 80}ms;">

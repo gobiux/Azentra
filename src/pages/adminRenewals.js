@@ -77,7 +77,7 @@ export function renderAdminRenewals() {
     <div class="section-title mb-16">Renewal Schedule</div>
     <div class="stagger-children" style="display:flex;flex-direction:column;gap:16px;" id="renewal-list">
       ${renewals.map((r, i) => {
-        const ti = toolIcons[r.tool] || { src: '/Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
+        const ti = toolIcons[r.tool] || { src: './Icons/ph_note.png', bg: '#F5F5F5', filter: 'icon-grey' };
         const statusMap = { 'Critical': 'danger', 'Upcoming': 'warning', 'Scheduled': 'success' };
         const statusClass = statusMap[r.status] || 'neutral';
         return `
