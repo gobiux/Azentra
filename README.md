@@ -53,6 +53,7 @@ Azentra/
 5. View in browser: Open `dist/index.html`
 
 
+
 ## Open Questions
 1. **Role Switching**: Should the interface allow switching between employee/admin views (as shown in PDFs), or should it be simplified with universal navigation?
 2. **Interactivity**: While all visual elements will be implemented (hover states, animations, button feedback), should we add placeholder functionality for backend actions (e.g., "Approve Request" showing a toast but not persisting data)?
