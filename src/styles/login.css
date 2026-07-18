@@ -1,0 +1,186 @@
+/* ============================================================
+   Redesigned Login Page Styles (Matches Mockup Image Exactly)
+   ============================================================ */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F2F5; /* clean light-grey background */
+  position: relative;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* White Login Card */
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 48px 40px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Brand Header */
+.login-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.brand-logo {
+  color: #603BFE;
+  display: block;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.brand-name {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #1A1A1E;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #8A8E94;
+  text-transform: uppercase;
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Form Styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #8A8E94;
+  text-transform: uppercase;
+}
+
+.login-form .input-field {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  background-color: #F1F2F5;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  color: #1A1A1E;
+  box-sizing: border-box;
+  transition: background-color var(--transition-fast, 150ms ease), box-shadow var(--transition-fast, 150ms ease);
+}
+
+.login-form .input-field::placeholder {
+  color: #A3A3AC;
+}
+
+.login-form .input-field:focus {
+  background-color: #ECECF0;
+  box-shadow: 0 0 0 2px rgba(96, 59, 254, 0.1);
+  outline: none;
+}
+
+/* Primary Button */
+.login-form .btn-primary {
+  background-color: #603BFE;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast, 150ms ease);
+  margin-top: 10px;
+  width: 100%;
+  box-shadow: none;
+}
+
+.login-form .btn-primary:hover {
+  background-color: #4F2EEB;
+  box-shadow: none;
+  transform: none;
+}
+
+.login-form .btn-primary::after {
+  display: none; /* Disable global button layout hover effect */
+}
+
+/* Notice texts */
+.contact-notice {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #8A8E94;
+  margin-top: 8px;
+}
+
+.admin-routing-notice {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #8A8E94;
+  max-width: 320px;
+  line-height: 1.5;
+  margin: 16px auto 80px; /* add spacing so footer fits cleanly */
+}
+
+/* Footer links at absolute bottom */
+.login-footer {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.login-footer a,
+.login-footer .copyright {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #A3A3AC;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  color: #603BFE;
+}

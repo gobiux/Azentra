@@ -1,0 +1,131 @@
+/* ============================================================
+   Sidebar Styles
+   ============================================================ */
+
+.sidebar-logo {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sidebar-logo h1 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.sidebar-logo span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  display: block;
+  margin-top: 2px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-nav-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background: var(--primary);
+  border-radius: 0 3px 3px 0;
+  transition: height var(--transition-fast);
+}
+
+.sidebar-nav-item:hover {
+  background: var(--bg-alt);
+  color: var(--text-primary);
+}
+
+.sidebar-nav-item.active {
+  background: var(--primary-lighter);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.sidebar-nav-item.active::before {
+  height: 20px;
+}
+
+.sidebar-nav-item .nav-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sidebar-nav-item .nav-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-bottom {
+  padding: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
+.sidebar-bottom .btn {
+  width: 100%;
+  background: var(--primary);
+  color: var(--text-inverse);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
+}
+
+.sidebar-bottom .btn:hover {
+  background: var(--primary-dark);
+  box-shadow: var(--shadow-primary);
+}
+
+.sidebar-help {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.sidebar-help:hover {
+  color: var(--primary);
+}
+
+.sidebar-help svg {
+  width: 18px;
+  height: 18px;
+}
